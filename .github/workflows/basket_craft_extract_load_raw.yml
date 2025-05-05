@@ -40,6 +40,4 @@ jobs:
           PG_DB: ${{ secrets.PG_DB }}
 
       - name: Run dbt models
-        run: dbt run
-        env:
-          DBT_PROFILES_DIR: ~/.dbt
+        run: dbt run --profiles-dir ~/.dbt
