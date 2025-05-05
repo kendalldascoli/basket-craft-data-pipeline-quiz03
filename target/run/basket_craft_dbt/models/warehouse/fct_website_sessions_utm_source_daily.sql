@@ -1,15 +1,10 @@
 
-  
+  create view "postgres"."raw"."fct_website_sessions_utm_source_daily__dbt_tmp"
     
-
-  create  table "postgres"."raw_raw"."fct_website_sessions_utm_source_daily__dbt_tmp"
-  
-  
-    as
-  
-  (
+    
+  as (
     WITH sessions AS (
-    SELECT * FROM "postgres"."raw_raw"."stg_website_sessions"
+    SELECT * FROM "postgres"."raw"."stg_website_sessions"
 )
 
 SELECT
@@ -19,4 +14,3 @@ SELECT
 FROM sessions
 GROUP BY 1, 2
   );
-  

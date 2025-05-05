@@ -1,5 +1,5 @@
 
-  create view "postgres"."raw_raw"."stg_website_sessions__dbt_tmp"
+  create view "postgres"."raw"."stg_website_sessions__dbt_tmp"
     
     
   as (

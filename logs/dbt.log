@@ -1393,3 +1393,285 @@ drop table if exists "postgres"."raw_raw"."fct_website_sessions_utm_source_daily
 [0m22:28:41.065206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c04df70cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c04e00e3470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c04dd652b70>]}
 [0m22:28:41.066040 [debug] [MainThread]: Flushing usage events
 [0m22:28:41.331955 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:57:30.601647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317acbda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317d3dfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7653179a45c0>]}
+
+
+============================== 22:57:30.605172 | a1a63d4f-56ca-4852-813e-2dbd55b15112 ==============================
+[0m22:57:30.605172 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:57:30.605985 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/workspaces/basket-craft-data-pipeline-quiz03/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:30.730617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a1a63d4f-56ca-4852-813e-2dbd55b15112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7653174df770>]}
+[0m22:57:30.740735 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+        The default package install path has changed from `dbt_modules` to
+`dbt_packages`.         Please update `clean-targets` in `dbt_project.yml` and
+check `.gitignore` as well.         Or, set `packages-install-path: dbt_modules`
+if you'd like to keep the current value.
+[0m22:57:30.741578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a1a63d4f-56ca-4852-813e-2dbd55b15112', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317471550>]}
+[0m22:57:30.747283 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.20850728, "process_in_blocks": "0", "process_kernel_time": 0.241693, "process_mem_max_rss": "96168", "process_out_blocks": "8", "process_user_time": 1.608647}
+[0m22:57:30.747946 [debug] [MainThread]: Command `dbt clean` succeeded at 22:57:30.747786 after 0.21 seconds
+[0m22:57:30.748527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317839520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317791430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765317932390>]}
+[0m22:57:30.749581 [debug] [MainThread]: Flushing usage events
+[0m22:57:31.032131 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:57:32.981669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a467e1a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a46752d820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a469956450>]}
+
+
+============================== 22:57:32.985488 | bd387be7-40f8-4dd9-a059-012873953b1f ==============================
+[0m22:57:32.985488 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:57:32.986402 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspaces/basket-craft-data-pipeline-quiz03/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:33.178051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a467cfb6b0>]}
+[0m22:57:33.256377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a4671ca810>]}
+[0m22:57:33.257465 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m22:57:33.381878 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m22:57:33.382786 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:57:33.383423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a4658a56d0>]}
+[0m22:57:34.563375 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.basket_craft_data_dbt
+[0m22:57:34.576502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a465648c80>]}
+[0m22:57:34.705038 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/basket-craft-data-pipeline-quiz03/target/manifest.json
+[0m22:57:34.708569 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/basket-craft-data-pipeline-quiz03/target/semantic_manifest.json
+[0m22:57:34.720948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a465480290>]}
+[0m22:57:34.721585 [info ] [MainThread]: Found 2 models, 1 source, 433 macros
+[0m22:57:34.722239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a465460ad0>]}
+[0m22:57:34.724302 [info ] [MainThread]: 
+[0m22:57:34.724923 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:57:34.725447 [info ] [MainThread]: 
+[0m22:57:34.726205 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:57:34.731547 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m22:57:34.773429 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m22:57:34.774086 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:57:34.774585 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:57:35.339087 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.564 seconds
+[0m22:57:35.341137 [debug] [ThreadPool]: On list_postgres: Close
+[0m22:57:35.342914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_raw)
+[0m22:57:35.349634 [debug] [ThreadPool]: Using postgres connection "list_postgres_raw"
+[0m22:57:35.350164 [debug] [ThreadPool]: On list_postgres_raw: BEGIN
+[0m22:57:35.350629 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:57:35.880671 [debug] [ThreadPool]: SQL status: BEGIN in 0.530 seconds
+[0m22:57:35.881392 [debug] [ThreadPool]: Using postgres connection "list_postgres_raw"
+[0m22:57:35.881968 [debug] [ThreadPool]: On list_postgres_raw: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "connection_name": "list_postgres_raw"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m22:57:35.946937 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.064 seconds
+[0m22:57:35.948674 [debug] [ThreadPool]: On list_postgres_raw: ROLLBACK
+[0m22:57:36.006286 [debug] [ThreadPool]: On list_postgres_raw: Close
+[0m22:57:36.013130 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:36.013622 [debug] [MainThread]: On master: BEGIN
+[0m22:57:36.014106 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:57:36.542323 [debug] [MainThread]: SQL status: BEGIN in 0.528 seconds
+[0m22:57:36.543092 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:36.543737 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:57:36.609147 [debug] [MainThread]: SQL status: SELECT 1 in 0.065 seconds
+[0m22:57:36.611155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a46543bbf0>]}
+[0m22:57:36.611762 [debug] [MainThread]: On master: ROLLBACK
+[0m22:57:36.669151 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:36.669952 [debug] [MainThread]: On master: BEGIN
+[0m22:57:36.784285 [debug] [MainThread]: SQL status: BEGIN in 0.114 seconds
+[0m22:57:36.785022 [debug] [MainThread]: On master: COMMIT
+[0m22:57:36.785534 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:36.786011 [debug] [MainThread]: On master: COMMIT
+[0m22:57:36.843399 [debug] [MainThread]: SQL status: COMMIT in 0.057 seconds
+[0m22:57:36.844155 [debug] [MainThread]: On master: Close
+[0m22:57:36.846752 [debug] [Thread-1 (]: Began running node model.basket_craft_dbt.stg_website_sessions
+[0m22:57:36.847433 [info ] [Thread-1 (]: 1 of 2 START sql view model raw.stg_website_sessions ........................... [RUN]
+[0m22:57:36.848152 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_raw, now model.basket_craft_dbt.stg_website_sessions)
+[0m22:57:36.848674 [debug] [Thread-1 (]: Began compiling node model.basket_craft_dbt.stg_website_sessions
+[0m22:57:36.857662 [debug] [Thread-1 (]: Writing injected SQL for node "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:36.858866 [debug] [Thread-1 (]: Began executing node model.basket_craft_dbt.stg_website_sessions
+[0m22:57:36.897322 [debug] [Thread-1 (]: Writing runtime sql for node "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:36.898473 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:36.899044 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: BEGIN
+[0m22:57:36.899555 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:57:37.431276 [debug] [Thread-1 (]: SQL status: BEGIN in 0.532 seconds
+[0m22:57:37.432149 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:37.432769 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.stg_website_sessions"} */
+
+  create view "postgres"."raw"."stg_website_sessions__dbt_tmp"
+    
+    
+  as (
+    
+
+SELECT
+  created_at AS website_session_created_at,
+  utm_source,
+  CURRENT_TIMESTAMP AS loaded_at
+FROM "postgres"."raw"."website_sessions"
+  );
+[0m22:57:37.499086 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.066 seconds
+[0m22:57:37.507254 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:37.507876 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.stg_website_sessions"} */
+alter table "postgres"."raw"."stg_website_sessions__dbt_tmp" rename to "stg_website_sessions"
+[0m22:57:37.566410 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.058 seconds
+[0m22:57:37.588236 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: COMMIT
+[0m22:57:37.590961 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:37.592374 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: COMMIT
+[0m22:57:37.650489 [debug] [Thread-1 (]: SQL status: COMMIT in 0.057 seconds
+[0m22:57:37.658166 [debug] [Thread-1 (]: Applying DROP to: "postgres"."raw"."stg_website_sessions__dbt_backup"
+[0m22:57:37.664228 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.stg_website_sessions"
+[0m22:57:37.664868 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.stg_website_sessions"} */
+drop view if exists "postgres"."raw"."stg_website_sessions__dbt_backup" cascade
+[0m22:57:37.723671 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.058 seconds
+[0m22:57:37.726635 [debug] [Thread-1 (]: On model.basket_craft_dbt.stg_website_sessions: Close
+[0m22:57:37.728735 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a469582c30>]}
+[0m22:57:37.729562 [info ] [Thread-1 (]: 1 of 2 OK created sql view model raw.stg_website_sessions ...................... [[32mCREATE VIEW[0m in 0.88s]
+[0m22:57:37.730474 [debug] [Thread-1 (]: Finished running node model.basket_craft_dbt.stg_website_sessions
+[0m22:57:37.731490 [debug] [Thread-1 (]: Began running node model.basket_craft_dbt.fct_website_sessions_utm_source_daily
+[0m22:57:37.732160 [info ] [Thread-1 (]: 2 of 2 START sql view model raw.fct_website_sessions_utm_source_daily .......... [RUN]
+[0m22:57:37.732851 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.basket_craft_dbt.stg_website_sessions, now model.basket_craft_dbt.fct_website_sessions_utm_source_daily)
+[0m22:57:37.733380 [debug] [Thread-1 (]: Began compiling node model.basket_craft_dbt.fct_website_sessions_utm_source_daily
+[0m22:57:37.736506 [debug] [Thread-1 (]: Writing injected SQL for node "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:37.737389 [debug] [Thread-1 (]: Began executing node model.basket_craft_dbt.fct_website_sessions_utm_source_daily
+[0m22:57:37.743492 [debug] [Thread-1 (]: Writing runtime sql for node "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:37.744459 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:37.745334 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: BEGIN
+[0m22:57:37.746178 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:57:38.272721 [debug] [Thread-1 (]: SQL status: BEGIN in 0.526 seconds
+[0m22:57:38.273524 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:38.274097 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"} */
+
+  create view "postgres"."raw"."fct_website_sessions_utm_source_daily__dbt_tmp"
+    
+    
+  as (
+    WITH sessions AS (
+    SELECT * FROM "postgres"."raw"."stg_website_sessions"
+)
+
+SELECT
+    date_trunc('day', website_session_created_at) AS session_date,
+    utm_source,
+    count(*) AS session_count
+FROM sessions
+GROUP BY 1, 2
+  );
+[0m22:57:38.336651 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.062 seconds
+[0m22:57:38.340368 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:38.340930 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"} */
+alter table "postgres"."raw"."fct_website_sessions_utm_source_daily__dbt_tmp" rename to "fct_website_sessions_utm_source_daily"
+[0m22:57:38.398509 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.057 seconds
+[0m22:57:38.401038 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: COMMIT
+[0m22:57:38.401804 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:38.402604 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: COMMIT
+[0m22:57:38.460868 [debug] [Thread-1 (]: SQL status: COMMIT in 0.057 seconds
+[0m22:57:38.463951 [debug] [Thread-1 (]: Applying DROP to: "postgres"."raw"."fct_website_sessions_utm_source_daily__dbt_backup"
+[0m22:57:38.465052 [debug] [Thread-1 (]: Using postgres connection "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"
+[0m22:57:38.465588 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "basket_craft_dbt", "target_name": "dev", "node_id": "model.basket_craft_dbt.fct_website_sessions_utm_source_daily"} */
+drop view if exists "postgres"."raw"."fct_website_sessions_utm_source_daily__dbt_backup" cascade
+[0m22:57:38.523170 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.057 seconds
+[0m22:57:38.525068 [debug] [Thread-1 (]: On model.basket_craft_dbt.fct_website_sessions_utm_source_daily: Close
+[0m22:57:38.525917 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bd387be7-40f8-4dd9-a059-012873953b1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a465649ee0>]}
+[0m22:57:38.526702 [info ] [Thread-1 (]: 2 of 2 OK created sql view model raw.fct_website_sessions_utm_source_daily ..... [[32mCREATE VIEW[0m in 0.79s]
+[0m22:57:38.527544 [debug] [Thread-1 (]: Finished running node model.basket_craft_dbt.fct_website_sessions_utm_source_daily
+[0m22:57:38.528974 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:38.529531 [debug] [MainThread]: On master: BEGIN
+[0m22:57:38.530141 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:57:39.055939 [debug] [MainThread]: SQL status: BEGIN in 0.526 seconds
+[0m22:57:39.056716 [debug] [MainThread]: On master: COMMIT
+[0m22:57:39.057289 [debug] [MainThread]: Using postgres connection "master"
+[0m22:57:39.057785 [debug] [MainThread]: On master: COMMIT
+[0m22:57:39.114728 [debug] [MainThread]: SQL status: COMMIT in 0.056 seconds
+[0m22:57:39.115388 [debug] [MainThread]: On master: Close
+[0m22:57:39.116242 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:57:39.116732 [debug] [MainThread]: Connection 'model.basket_craft_dbt.fct_website_sessions_utm_source_daily' was properly closed.
+[0m22:57:39.117283 [info ] [MainThread]: 
+[0m22:57:39.117914 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.39 seconds (4.39s).
+[0m22:57:39.119191 [debug] [MainThread]: Command end result
+[0m22:57:39.142185 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/basket-craft-data-pipeline-quiz03/target/manifest.json
+[0m22:57:39.144002 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/basket-craft-data-pipeline-quiz03/target/semantic_manifest.json
+[0m22:57:39.150145 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/basket-craft-data-pipeline-quiz03/target/run_results.json
+[0m22:57:39.150661 [info ] [MainThread]: 
+[0m22:57:39.151336 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:57:39.151901 [info ] [MainThread]: 
+[0m22:57:39.152498 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m22:57:39.154017 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.2361164, "process_in_blocks": "0", "process_kernel_time": 0.30796, "process_mem_max_rss": "117204", "process_out_blocks": "2576", "process_user_time": 3.449555}
+[0m22:57:39.154897 [debug] [MainThread]: Command `dbt run` succeeded at 22:57:39.154730 after 6.24 seconds
+[0m22:57:39.155735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a467e1a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a468b0d040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a468b0da30>]}
+[0m22:57:39.156819 [debug] [MainThread]: Flushing usage events
+[0m22:57:39.396394 [debug] [MainThread]: An error was encountered while trying to flush usage events

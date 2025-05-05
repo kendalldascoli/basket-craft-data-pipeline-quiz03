@@ -1,14 +1,13 @@
 from sqlalchemy import text
 
-from dotenv import load_dotenv
-load_dotenv()
-
 import pandas as pd
 from sqlalchemy import create_engine
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+if os.path.exists(".env"):
+    from dotenv import load_dotenv
+    load_dotenv()
+
 
 # Load MySQL credentials from environment variables (set in GitHub Secrets)
 MYSQL_USER = os.getenv("MYSQL_USER")

@@ -9,9 +9,5 @@ target-path: "target"
 clean-targets: ["target", "dbt_modules"]
 
 models:
-  basket_craft_dbt:
-    +schema: raw
-    staging:
-      +materialized: view
-    warehouse:
-      +materialized: table
+  +schema: raw
+  +materialized: view
