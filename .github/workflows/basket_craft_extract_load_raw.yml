@@ -54,4 +54,3 @@ jobs:
           DBT_HOST: ${{ secrets.PG_HOST }}
           DBT_PORT: ${{ secrets.PG_PORT }}
           DBT_DBNAME: ${{ secrets.PG_DB }}
-          DBT_SCHEMA: raw
