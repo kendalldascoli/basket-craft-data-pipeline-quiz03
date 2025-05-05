@@ -10,7 +10,6 @@ clean-targets: ["target", "dbt_modules"]
 
 models:
   basket_craft_dbt:
-    +schema: raw
     staging:
       +materialized: view
     warehouse:
