@@ -1,6 +1,7 @@
 version: 2
 
 sources:
-  - name: public
+  - name: raw
+    schema: raw
     tables:
       - name: website_sessions
