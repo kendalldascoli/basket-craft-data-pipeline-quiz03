@@ -42,16 +42,16 @@ jobs:
         run: pip install dbt-postgres
 
       - name: Run dbt models
-  run: |
-    mkdir -p ~/.dbt
-    cp profiles/profiles.yml ~/.dbt/profiles.yml
-    dbt clean
-    dbt deps
-    dbt run
-  env:
-    DBT_USER: ${{ secrets.PG_USER }}
-    DBT_PASSWORD: ${{ secrets.PG_PASSWORD }}
-    DBT_HOST: ${{ secrets.PG_HOST }}
-    DBT_PORT: ${{ secrets.PG_PORT }}
-    DBT_DBNAME: ${{ secrets.PG_DB }}
-
+        run: |
+          mkdir -p ~/.dbt
+          cp profiles/profiles.yml ~/.dbt/profiles.yml
+          dbt clean
+          dbt deps
+          dbt run
+        env:
+          DBT_USER: ${{ secrets.PG_USER }}
+          DBT_PASSWORD: ${{ secrets.PG_PASSWORD }}
+          DBT_HOST: ${{ secrets.PG_HOST }}
+          DBT_PORT: ${{ secrets.PG_PORT }}
+          DBT_DBNAME: ${{ secrets.PG_DB }}
+          DBT_SCHEMA: raw
