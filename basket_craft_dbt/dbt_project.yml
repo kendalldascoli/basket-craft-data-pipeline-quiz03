@@ -2,13 +2,16 @@ name: basket_craft_dbt
 version: '1.0'
 config-version: 2
 
-profile: default
+profile: basket_craft_dbt
 
 model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
 
 models:
   basket_craft_dbt:
+    +schema: raw
     staging:
-      +schema: raw
+      +materialized: view
     warehouse:
-      +schema: analytics
+      +materialized: table
