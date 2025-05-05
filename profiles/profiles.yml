@@ -9,3 +9,4 @@ basket_craft_dbt:
       port: "{{ env_var('PG_PORT') | int }}"
       dbname: "{{ env_var('PG_DB') }}"
       schema: raw
+      threads: 1
