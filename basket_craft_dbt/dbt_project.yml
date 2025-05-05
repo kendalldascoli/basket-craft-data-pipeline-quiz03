@@ -1,0 +1,14 @@
+name: basket_craft_dbt
+version: '1.0'
+config-version: 2
+
+profile: default
+
+model-paths: ["models"]
+
+models:
+  basket_craft_dbt:
+    staging:
+      +schema: raw
+    warehouse:
+      +schema: analytics
