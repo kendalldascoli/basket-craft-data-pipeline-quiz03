@@ -1,10 +1,6 @@
-WITH source AS (
-    SELECT * FROM {{ source('public', 'website_sessions') }}
-)
+{{ config(materialized='view') }}
 
 SELECT
-    id,
-    utm_source,
-    created_at,
-    current_timestamp as loaded_at
-FROM source
+    created_at AS website_session_created_at,
+    CURRENT_TIMESTAMP AS loaded_at
+FROM {{ source('public', 'website_sessions') }}
