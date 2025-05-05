@@ -3,10 +3,10 @@ basket_craft_dbt:
   outputs:
     dev:
       type: postgres
-      host: "{{ env_var('PG_HOST') }}"
-      user: "{{ env_var('PG_USER') }}"
-      password: "{{ env_var('PG_PASSWORD') }}"
-      port: "{{ env_var('PG_PORT') | int }}"
-      dbname: "{{ env_var('PG_DB') }}"
-      schema: raw  # <- Use a static value here instead of {{ env_var('DBT_SCHEMA') }}
+      host: isba-dev-02.cxue0o466fzu.us-east-1.rds.amazonaws.com
+      user: postgres
+      password: isba_4715
+      port: 5432
+      dbname: postgres
+      schema: raw  
       threads: 1
