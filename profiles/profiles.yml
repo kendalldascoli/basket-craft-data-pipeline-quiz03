@@ -1,4 +1,4 @@
-basket_craft_dbt:
+basket_craft:
   target: dev
   outputs:
     dev:
@@ -8,5 +8,5 @@ basket_craft_dbt:
       password: "{{ env_var('PG_PASSWORD') }}"
       port: "{{ env_var('PG_PORT') | int }}"
       dbname: "{{ env_var('PG_DB') }}"
-      schema: raw
+      schema: raw_raw
       threads: 1
