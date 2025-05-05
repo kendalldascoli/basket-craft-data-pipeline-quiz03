@@ -1,3 +1,5 @@
+from sqlalchemy import text
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -45,7 +47,7 @@ pg_engine = create_engine(pg_conn_str)
 
 # Truncate table before loading
 with pg_engine.begin() as conn:
-    conn.execute("TRUNCATE TABLE raw.website_sessions")
+    conn.execute(text("TRUNCATE TABLE raw.website_sessions"))
 
 # Load new data
 df.to_sql("website_sessions", pg_engine, schema="raw", if_exists="append", index=False)
