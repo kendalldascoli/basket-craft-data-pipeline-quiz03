@@ -6,13 +6,11 @@ profile: basket_craft_dbt
 
 model-paths: ["models"]
 target-path: "target"
-clean-targets: ["target", "dbt_modules"]
+clean-targets: ["target", "dbt_packages"]
 
 models:
-  basket_craft_dbt:
-    +schema: "raw"
-    staging:
-      +materialized: view
-    warehouse:
-      +materialized: table
-
+  +schema: raw
+  staging:
+    +materialized: view
+  warehouse:
+    +materialized: table
