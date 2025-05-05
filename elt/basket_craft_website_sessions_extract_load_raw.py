@@ -20,11 +20,11 @@ mysql_conn_str = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{M
 mysql_engine = create_engine(mysql_conn_str)
 
 # Query for sessions in December 2023
-query = """
+query = '''
 SELECT *
 FROM website_sessions
 WHERE created_at BETWEEN '2023-12-01' AND '2023-12-31 23:59:59';
-"""
+'''
 
 # Fetch data into a DataFrame
 df = pd.read_sql(query, mysql_engine)
@@ -43,7 +43,10 @@ PG_DB = os.getenv("PG_DB")
 pg_conn_str = f"postgresql+psycopg2://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DB}"
 pg_engine = create_engine(pg_conn_str)
 
-# Write data to raw.website_sessions
-df.to_sql("website_sessions", pg_engine, schema="raw", if_exists="replace", index=False)
-print("Data successfully loaded into Postgres.")
+# Truncate table before loading
+with pg_engine.begin() as conn:
+    conn.execute("TRUNCATE TABLE raw.website_sessions")
+
+# Load new data
+df.to_sql("website_sessions", pg_engine, schema="raw", if_exists="append", index=False)
 

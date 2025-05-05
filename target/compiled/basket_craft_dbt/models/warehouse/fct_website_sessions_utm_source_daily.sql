@@ -1,5 +1,5 @@
 WITH sessions AS (
-    SELECT * FROM {{ ref('stg_website_sessions') }}
+    SELECT * FROM "postgres"."raw_raw"."stg_website_sessions"
 )
 
 SELECT
