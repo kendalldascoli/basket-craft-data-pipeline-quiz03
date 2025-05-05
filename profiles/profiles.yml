@@ -1,4 +1,4 @@
-basket_craft:
+default:
   target: dev
   outputs:
     dev:
@@ -9,3 +9,4 @@ basket_craft:
       port: "{{ env_var('DBT_PORT') | int }}"
       dbname: "{{ env_var('DBT_DBNAME') }}"
       schema: "{{ env_var('DBT_SCHEMA') }}"
+      threads: 1
