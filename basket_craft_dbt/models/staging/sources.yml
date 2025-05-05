@@ -4,4 +4,3 @@ sources:
   - name: public
     tables:
       - name: website_sessions
-ß
