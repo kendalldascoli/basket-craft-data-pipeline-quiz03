@@ -34,8 +34,7 @@ jobs:
 
 
     - name: Run ELT script
-      run: python basket-craft-data-pipeline-quiz03/elt/basket_craft_website_sessions_extract_load_raw.py
-
+      run: python elt/basket_craft_website_sessions_extract_load_raw.py
 
     - name: Install dbt
       run: pip install dbt-postgres
